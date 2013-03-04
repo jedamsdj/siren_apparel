@@ -1,0 +1,21 @@
+.tester
+{
+	position:relative;
+	border:5px solid #d93d3d;
+	padding:5px;
+	width:10em;
+	height:8em;
+	top:50px;
+	left:20px;
+}
+
+.carttext
+{
+	display:block;
+	position:relative;
+	font-weight:bold;
+	font-size:15px;
+	color:#d93d3d;
+	font-family:"Tahoma", "Arial", "Sans-serif";
+	margin: 2% 2% 2% 2%;
+}

@@ -1,0 +1,45 @@
+.background{
+	background-color:white;
+}
+
+.logo{
+	position:relative;
+	left:350px;
+	width:506px;
+	height:152px;
+}
+
+.text {
+	display:block;
+	position:relative;
+	left:350px;
+	width:500px;
+	top:20px;
+	bottom:20px;
+	font-family:Arial, Sans-serif;
+	font-size:15px;
+	color:#000080;	
+	font-weight:bold;
+	text-align:justified;
+
+}
+
+.smalltext {
+	display:block;
+	position:relative;
+	left:350px;
+	width:500px;
+	top:20px;
+	bottom:20px;
+	font-family:Arial, Sans-serif;
+	font-size:9px;
+	color:#000080;	
+	font-weight:bold;
+	text-align:justified;
+
+}
+
+.boxsize {
+	height:200px;
+	width:200px;
+}

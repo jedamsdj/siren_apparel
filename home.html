@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Siren Apparel - Home</title>
+	
+	<link rel="stylesheet" href="css/homestyle.css">
+	<link rel="stylesheet" href="css/global.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/loading.gif',
+				play: 7000,
+				pause: 7000,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+	<link rel='shortcut icon' type='image/x-icon' href='http://sirenapparel.org/favicon.png'/> <!--favicon, .ico format-->
+	<link rel='shortcut icon' type='image/x-icon' href='http://sirenapparel.org/icon3.png'/> <!--favicon, .ico format-->
+	<link rel='shortcut icon' type='image/x-icon' href='http://sirenapparel.org/favicon.png'/> <!--favicon, .ico format-->	
+
+</head>
+<body class = "background">
+		<div class = "iconcontainer">
+			<a href = "http://www.facebook.com/sirenapparel" target="_blank" title="facebook.com/sirenapparel"> 
+				<img src = "images/facebookicon.png" alt = "" class = "facebookposition"/> 
+			</a>
+			<a href = "http://twitter.com/siren_apparel" target="_blank" title="twitter.com/siren_apparel"> 
+				<img src = "images/twittericon.png" alt = "" class = "twitterposition"/> 
+			</a>
+		</div>
+		<div class = "pagecontainer">
+		
+
+			<div class = "navbarposition">
+				<ul class = "navbar">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="thanks.html">Thanks</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="press.html">Press</a></li>
+				</ul>
+			</div>
+			
+			
+			<div id="container">
+				<div id="example">
+					<div id="slides">
+						<div class="slides_container">
+						
+							<div class="slide">
+								<img src="images/slide-6.jpg" alt="Slide 1">
+								<div class="caption" style="bottom:0">
+									<p>WEBSTER, NEW YORK (12/24/2012) - A police officer and volunteer firefighter were shot and killed while two other firefighters were injured in a shooting. Our deepest 
+									condolences and prayers go out to the families of these individuals. May their lives and work be honored.</p>
+								</div>
+							</div>
+							
+							<div class="slide">
+								<img src="images/slide-5.jpg" alt="Slide 2">
+								<div class="caption" style="bottom:0">
+									<p>EAST COAST (10/30/2012) - Hurricane Sandy created historical damage to the northeast. 
+									Our best wishes go out to everyone affected by this storm, and to
+									all fire fighters, police, and EMTs that are working in these affected areas. &#169 2012 The Washington Times.</p>
+								</div>
+							</div>
+							
+							<div class="slide">
+								<img src="images/slide-1.jpg" alt="Slide 3">
+								<div class="caption" style="bottom:0">
+									<p>CHICAGO, IL (7/29/2012) - More than 1,000 police and motorists drive down Chicago's W. Harrison St 
+									to honor Chicago's 452 fallen officers at the "Area 4 Ride to Remember". &#169 2012 Chicago Tribune.</p>
+								</div>
+							</div>
+							
+						</div>
+						<a href="#" class="prev"><img src="images/arrow-prev2.png" width="24" height="42" alt="Arrow Prev"></a>
+						<a href="#" class="next"><img src="images/arrow-next2.png" width="24" height="42" alt="Arrow Next"></a>
+					</div>
+					<img src="images/frame.png" width="739" height="341" alt="Example Frame" id="frame">
+				</div>
+			</div>
+			<div class = "description">
+				173 police officers and 78 fire fighters lost their lives in the line of duty in 2011.
+				There are more than 581,000 police and 30,000 fire departments active in the United States every day serving millions of people.
+				As citizens, they have gone above and beyond. These men, women, and departments deserve national recognition. 
+				By selling eye-catching and independently designed clothing, Siren Apparel will create this national recognition and donate to these heroes.
+			</div>
+			<div class = "title">
+				<div class = "video">
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/6PI97Hjp2hI" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+</body>
+</html>

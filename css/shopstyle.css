@@ -1,0 +1,121 @@
+.logoposition{
+	position:absolute;
+	top:0px;
+	left:-210px;
+}
+
+.productpictures{
+	position:absolute;
+	left:0px;
+	top:50px;
+	font-family:Tahoma, Arial, Sans-serif;
+	font-size:20px;
+	color:black;	
+	font-weight:bold;
+}
+
+.titlecontainer{
+	display:block;
+	position:absolute;
+	margin:40px;
+}
+
+.shirtcontainer{
+	width:200px;
+	height:260px;
+	position:relative;/*show up in order of the document flow. This is ok since we are using <p> and the page centering method for all the elements*/
+	/*margin:50px;*/
+}
+
+.titletext{
+	/*position:relative;*/
+	width:400px;
+	bottom:35px;/*shift a little closer to the picture*/
+	left:15px;
+	font-family:Tahoma, Arial, Sans-serif;
+	font-size:15px;
+	color:black;	
+	font-weight:bold;
+}
+
+.shortsimage{
+	position:relative;
+	display:block;
+	height:402px;
+	width:600px;
+	border:solid 10px #d93d3d;
+	margin:50px auto 100px auto;
+}
+
+.wristbandimage{
+	position:relative;
+	display:block;
+	height:835px;
+	width:600px;
+	border:solid 10px #d93d3d;
+	margin:50px auto 100px auto;
+}
+
+.imageadjust{
+	position:relative;
+	bottom:5px;
+}
+
+.wristbandtext{
+	display:block;
+	position:relative;
+	width:500px;
+	top:20px;/*shift a little closer to the picture*/
+	left:11px;
+	font-family:Tahoma, Arial, Sans-serif;
+	font-size:15px;
+	color:black;	
+	font-weight:bold;
+	margin:0px auto 30px 10px;
+}
+
+.shortstext{
+	display:block;
+	position:absolute;
+	width:500px;
+	top:425px;/*shift a little closer to the picture*/
+	left:11px;
+	font-family:Tahoma, Arial, Sans-serif;
+	font-size:15px;
+	color:black;	
+	font-weight:bold;
+	margin:0px auto 30px 10px;
+}
+
+.shopimage{
+	/*position:relative;*/
+	height:200px;
+	width:240px;
+	margin:10px;/*10px margins on all sides*/
+	border:solid 10px #d93d3d;
+}
+
+
+
+.indents /*shifts the child element slightly to the right of the parent*/
+{	
+	display:block;/*so there is no overlap*/
+	position:relative;
+	left:2em;/*indent a little bit, relative to font size*/
+	font-size:15px;
+	font-style:italic;
+	margin:30px;
+}
+
+span.imgswap 
+{
+	background-image:url("comingsoonbanner.png"); 
+	background-repeat: no-repeat; display:block;
+	z-index:99999;
+}
+
+span.imgswap:hover img 
+{
+	visibility:hidden;
+}
+

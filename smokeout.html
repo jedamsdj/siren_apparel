@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Siren Apparel - Smoke Out Tee</title>
+	
+	<link rel="stylesheet" href="css/shirtstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/global.css"> <!--reference the stylesheet-->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/ProductSlides.js"></script>
+	<script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 350,
+				fadeSpeed: 1000,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+	
+	<script src="js/cartCookie.js"></script>
+	<script src="js/simpleCart.js"></script>
+	
+	<script src="simpleCart.js"></script>
+	<script>
+	  simpleCart({
+		checkout: {
+		  type: "PayPal",
+		  email: "guitarshreder07@aol.com"
+		}
+	  });
+	</script>
+
+	
+	<link rel='shortcut icon' type='image/x-icon' href='http://sirenapparel.org/favicon.png'/> <!--favicon, .ico format-->
+	<link rel='shortcut icon' type='image/x-icon' href='http://sirenapparel.org/favicon.png'/> <!--favicon, .ico format-->
+</head>
+
+
+<body class = "background">
+	<div class = "iconcontainer">
+				<a href = "http://www.facebook.com/sirenapparel" target="_blank" title="facebook.com/sirenapparel"> 
+					<img src = "images/facebookicon.png" class = "facebookposition"/> 
+				</a>
+						
+				<a href = "http://twitter.com/siren_apparel" target="_blank" title="twitter.com/siren_apparel"> 
+					<img src = "images/twittericon.png" class = "twitterposition"/> 
+				</a>
+		</div>
+		
+
+
+	<div class = "pagecontainer">
+		<div class = "logotopleft">
+			<a href = "http://www.sirenapparel.org/shop" title = "Return to Shop Main Page"><img src="images/sirenapparelfront.png" width = "300" height = "102"></a>
+		</div>
+		
+		<div class = "header">
+			<img src = "images/shop.png">
+		</div>
+		
+		<div class = "descriptionone">
+			Siren Apparel<span class = "superscript">TM</span> "Smoke Out" Fall 2012 Logo Tee. 100% cotton. 
+			Includes custom logo hits on the inside collar and custom shirt tag. Printed right here in the States. 
+			Coming Soon.
+		</div>
+		
+		<div class = "checkoutstuff">
+			<div class="simpleCart_shelfItem">
+				<span class="item_name" style="visibility:hidden">Smoke Out Tee</span>
+				<span class="item_price">$30</span>
+				<select class="item_size">
+					<option value="Small"> Small </option>
+					<option value="Medium"> Medium </option>
+					<option value="Large"> Large </option>
+				</select>
+				<input type="text" value="1" class="item_Quantity">
+				<a href="javascript:;" class="item_add">Add to Cart</a>
+				<p>
+				</p>
+			</div>
+		</div>
+
+		<div class = "setpositionone">
+			<div id="container">
+				<div id="products_example">
+					<div id="products">
+						<div class="slides_container">
+							<a href="http://www.sirenapparel.org/images/smokeoutfrontfullsize.jpg" id = "View Larger" target="_blank"><img src="images/smokeoutfront.jpg" width="366"></a>
+							<a href="http://www.sirenapparel.org/images/smokeoutbackfullsize.jpg" id = "View Larger" target="_blank"><img src="images/smokeoutback.jpg" width="366"></a>
+							<a href="http://www.sirenapparel.org/images/smokeoutinscriptionfullsize.jpg" id = "View Larger" target="_blank"><img src="images/smokeoutinscription.jpg" width="366"></a>
+							<a href="http://www.sirenapparel.org/images/smokeouttagfullsize.jpg" id = "View Larger" target="_blank"><img src="images/smokeouttag.jpg" width="366"></a>
+						</div>
+						<ul class="pagination">
+							<li><a href="#" id = "View Larger"><img src="images/smokeoutfront.jpg" width="55"></a></li>
+							<li><a href="#" id = "View Larger"><img src="images/smokeoutback.jpg" width="55"></a></li>
+							<li><a href="#" id = "View Larger"><img src="images/smokeoutinscription.jpg" width="55"></a></li>
+							<li><a href="#" id = "View Larger"><img src="images/smokeouttag.jpg" width="55"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class = "cartlocation">
+		<a href = "http://www.sirenapparel.org/checkout.html" target = "_blank">
+			<img src = "images/cart.png" title = "View Cart" width = "70px" height = "70px">
+		</a>
+		<div class = "carttext">
+			(<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)
+			<a href="javascript:;" class="simpleCart_empty">Empty Cart</a>
+		</div>
+	</div>
+	<a href = "http://www.rockthepost.com" target = "_blank"> 
+		<img src = "images/rockthepostbanner.png" alt = "" class = "rockthepostbannerposition"/>
+	</a>
+	
+	<script type="text/JavaScript">
+		createCookie("cart", stringify(simpleCart_items,1));
+	</script>
+
+	
+
+</body>
+</html>

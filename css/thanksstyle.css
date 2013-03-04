@@ -1,0 +1,41 @@
+
+.maintext
+{
+	position:relative;
+	font-family:"Tahoma", "Arial", "sans-serif"; 
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	color:#d93d3d;
+	margin-top:10px;
+	margin-right:auto;
+	margin-left:auto;
+	width:50em;
+	
+}
+
+.pictureandcaptioncontainer
+{	
+	position:relative;
+	margin:10px;
+}
+	
+.picture
+{
+	position:relative;
+	right:auto;
+	left:auto;
+}
+
+.caption
+{
+	position:relative;
+	font-family:"Tahoma", "Arial", "sans-serif"; 
+	font-weight:bold;
+	font-size:13px;
+	color:#d93d3d;
+	text-align:justified;
+	
+}
+
+

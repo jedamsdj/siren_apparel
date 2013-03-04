@@ -1,0 +1,42 @@
+/*This style sheet includes things that are applied to all pages*/
+.pagecontainer { /* for our pages, so the center even on large screens */
+	position:relative; /*Always will be relative to the CENTER of the page, everything inside it will be listed as ABSOLUTE in reference to the box.*/
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.rockthepostbannerposition { /*for our banner, applied to every page */
+	position:fixed;
+	right:0px;
+	top:400px;
+}
+
+.background{
+	/*background:url("../images/whitetilebackground.png");*/
+	background-color:#3564BD; 
+	background-position:center top;
+	background-repeat:no-repeat;
+	margin-left: auto;   
+    margin-right: auto;
+}
+
+.superscript 
+{ 
+	position:relative;/*keep 'relative'... it is used in a <span> type tag, so it needs relativety to work*/ 
+	top: -0.5em; /*move it up half a notch*/
+	font-size: 80%; /*and shrink it*/
+}
+
+.footer{
+	position:absolute;/*always relative to the bottom of the page*/
+	bottom:650px;
+	margin: auto auto;
+}
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/

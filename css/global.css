@@ -1,0 +1,120 @@
+/*This style sheet includes things that are applied to all pages*/
+.background{
+	/*background:url("../images/whitetilebackground.png");*/
+	background-color:#3564BD; 
+	background-position:center top;
+	background-repeat:no-repeat;
+	margin-left: auto;   
+    margin-right: auto;
+}
+
+.iconcontainer{/*for our facebook and twitter icons*/
+	position:absolute;/*relative to pagecontainer location*/
+	right:5px;
+	top:5px;
+}
+
+.pagecontainer { /* for our pages, so the center even on large screens */
+	position:relative; /*Always will be relative to the CENTER of the page, everything inside it will be listed as ABSOLUTE in reference to the box.*/
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	border-width:2px red;
+}
+
+.header{
+	position:absolute;
+	left:230px;
+	top:30px;
+}
+
+
+.facebookposition{
+	position:absolute;
+	top:10px;
+	right:55px;
+	height:50px;
+	width:50px;
+}
+
+.twitterposition{
+	position:absolute;
+	top:10px;
+	right:0px;
+	z-index:2;
+	height:50px;
+	width:50px;
+}
+
+.logotopleft{
+	position: fixed;
+	top:0px;
+	left:0px;
+}
+
+.rockthepostbannerposition { /*for our banner, applied to every page */
+	position:fixed;
+	right:0px;
+	top:400px;
+}
+
+.superscript 
+{ 
+	position:relative;/*keep 'relative'... it is used in a <span> type tag, so it needs relativety to work*/ 
+	top: -0.5em; /*move it up half a notch*/
+	font-size: 80%; /*and shrink it*/
+}
+
+a:visited {
+  color:black;
+}
+a:link{
+  color:black;
+}
+
+/*NAVIGATION BAR POSITION AND STYLE---------------------------------------------------------------*/
+.navbarposition{
+	padding:30px 0px 0px 60px;
+}
+
+.navbar {
+	z-index:9999999;
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none; 
+}
+
+.navbar ul
+{
+	list-style-type:none;
+	margin:0;
+}
+
+.navbar li {
+	float: left; 
+}
+.navbar a:link,a:visited
+{
+	color:white;
+	display:block;
+	font-weight:bold;
+	font-family:tahoma;
+	font-size:15px;
+	background-color:#d93d3d;
+	width:130px;
+	text-align:center;
+	padding:4px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.navbar a:visited
+{	
+	color:white;
+}
+
+.navbar a:hover,a:active
+{
+	background-color:#FF6464;
+}

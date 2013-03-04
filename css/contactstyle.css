@@ -1,0 +1,77 @@
+.maincontactinfo{
+	top:50px;
+	text-align:center;
+	font-family:tahoma,arial,sans-serif;
+	font-weight:bold;
+	font-size:18px;
+	color:white;
+}
+
+.personcontainer1{
+	display:block;
+	position:relative;
+	background-color:white;
+	top:100px;
+	left:200px;
+	margin-top:50px;
+	margin:30px;
+	height:380px;
+	width:330px;
+	border:solid 10px #d93d3d;
+}
+
+.personcontainer{
+	display:block;
+	position:relative;
+	background-color:white;
+	left:200px;
+	margin-top:50px;
+	margin:30px;
+	height:380px;
+	width:330px;
+	border:solid 10px #d93d3d;
+}
+
+.personpicture{
+	position:absolute;
+	top:10px;
+	left:9px;
+	height:233px;
+	width:310px;
+	border:solid 2px #d93d3d;
+}
+
+.persondescription{
+	position:absolute;
+	top:263px;
+	left:10px;
+	height:117px;
+	width:310px;
+	font-family:tahoma,arial,sans-serif;
+	font-weight:bold;
+	font-size:15px;
+	color:black;
+}
+
+.adjust{
+	right:1px;
+	top:-40px;
+}
+
+a 
+{ 
+color: white; 
+text-decoration:none;
+}
+a:visited 
+{ 
+color:white; 
+}
+a:hover 
+{ 
+text-decoration:underline;
+}
+a:active 
+{ 
+color: white; 
+}

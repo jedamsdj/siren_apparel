@@ -1,0 +1,41 @@
+.mediatitle{
+	position:relative;
+	top:-20px;
+	left:60px;
+	color:black;
+	width:700px;
+	font-family:tahoma, arial, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	z-index:-1;
+}
+
+.mediatitle2{
+	position:relative;
+	top:-20px;
+	left:60px;
+	color:black;
+	width:700px;
+	font-family:tahoma, arial, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	z-index:99999;
+}
+
+.mediapicture{
+	position:relative;
+	left:65px;
+	margin-bottom:30px;
+	margin-left:10px;
+	/*border:solid 10px #d93d3d;*/
+}
+
+a:link{
+color:white;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+

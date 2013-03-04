@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <id>urn:iweb:4BFE03ED-EA09-4BA7-A43E-227C448A0BDB</id>
+ <title>Page list Atom feed</title>
+ <updated>2012-05-23T01:51:20-04:00</updated>
+ <link rel="self" href="feed.xml"/>
+ <generator>iWeb</generator>
+ <author>
+  <name>iWeb</name>
+ </author>
+ <entry>
+  <id>urn:iweb:FEAFCB32-89C7-4FF7-A3DC-30C52164149B</id>
+  <title>Coming Soon</title>
+  <title xmlns="urn:iweb:">Coming Soon</title>
+  <in-navbar xmlns="urn:iweb:">FEAFCB32-89C7-4FF7-A3DC-30C52164149B</in-navbar>
+  <link rel="alternate" href="Coming_Soon.html"/>
+  <updated>2012-05-23T01:51:20.001-04:00</updated>
+  <content>Coming Soon</content>
+ </entry>
+</feed>

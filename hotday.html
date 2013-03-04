@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Siren Apparel - Shop</title>
+	
+	<link rel="stylesheet" href="css/shirtstyle.css">
+	<link rel="stylesheet" href="css/global.css">
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/ProductSlides.js"></script>
+	<script>
+		$(function(){
+			$('#products').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				effect: 'slide, fade',
+				crossfade: true,
+				slideSpeed: 350,
+				fadeSpeed: 1000,
+				generateNextPrev: true,
+				generatePagination: false
+			});
+		});
+	</script>
+	<script>
+		var cartButton = document.getElementById("cartButton");
+		var hitCount = 1;//keeping track of clicks on the 'add to cart' button
+
+		function updateCartandCookie()
+		{
+			myItems[hitCount] = "hotday";
+			document.getElementById("cartNumberOfItems").innerHTML = hitCount++;	
+			CartTracker.createCookie("myCart", "hotday",
+		}
+	</script>
+	<link rel='shortcut icon' type='image/x-icon' href='http://sirenapparel.org/favicon.png'/> <!--favicon, .ico format-->
+</head>
+
+<body>
+	<div class = "logo">
+		<a href = "http://www.sirenapparel.org/shop" title = "Return to Shop Main Page"><img src="images/sirenapparelfront.png" width = "300" height = "102"></a>
+	</div>
+	
+	<div class = "header">
+		<img src = "images/shopheader.png">
+	</div>
+	
+	<a href = "http://www.facebook.com/sirenapparel" target="_blank" title="facebook.com/sirenapparel"> 
+		<img src = "images/facebookicon.png" alt = "" class = "facebookposition"/> 
+	</a>
+	
+	<a href = "http://twitter.com/siren_apparel" target="_blank" title="twitter.com/siren_apparel"> 
+		<img src = "images/twittericon.png" alt = "" class = "twitterposition"/> 
+	</a>
+	
+	<div class = "descriptionone">
+		Siren Apparel<span class = "superscript">TM</span> "Hydrant Removal Logo Tee" 100% cotton. 
+		Printed right here in the States. Avaliable only on our campaing on Rock The Post.
+		
+		<div class = "buttonlocation" style = "border-color:red; border-thickness:2px;">
+			<div id = "cartButton" style = "border-color:green; border-thickness:2px;"><!--let the javascript know this is the cart button-->
+				<a href="#" onclick = "updateCartandCookie()"><img src = "images/addtocart.png"></a><!-- on click, update the cart-->
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class = "cartlocation">
+		<a href = "sirenapparel.org/cart.html" title = "View Cart"><img src = "images/cart.png" height = "67px" width = "67px"></a>
+		<span class = "carttext">
+			(<span id = "cartNumberOfItems">0</span>)
+		</span>
+	</div>
+
+
+	<div class = "priceone">
+		$25
+	</div> 
+	<div class = "setpositionone">
+		<div id="container">
+			<div id="products_example">
+				<div id="products">
+					<div class="slides_container">
+						<a href="http://www.sirenapparel.org/images/hotdayfrontfullsize.jpg" id = "View Larger" target="_blank"><img src="images/hotdayfront.jpg" width="366"></a>
+						<a href="http://www.sirenapparel.org/images/hotdaybackfullsize.jpg" id = "View Larger" target="_blank"><img src="images/hotdayback.jpg" width="366"></a>
+						<a href="http://www.sirenapparel.org/images/hotdayinscriptionfullsize.jpg" id = "View Larger" target="_blank"><img src="images/hotdayinscription.jpg" width="366"></a>
+						<a href="http://www.sirenapparel.org/images/hotdaytagfullsize.jpg" id = "View Larger" target="_blank"><img src="images/hotdaytag.jpg" width="366"></a>
+					</div>
+					<ul class="pagination">
+						<li><a href="#" id = "View Larger"><img src="images/hotdayfront.jpg" width="55"></a></li>
+						<li><a href="#" id = "View Larger"><img src="images/hotdayback.jpg" width="55"></a></li>
+						<li><a href="#" id = "View Larger"><img src="images/hotdayinscription.jpg" width="55"></a></li>
+						<li><a href="#" id = "View Larger"><img src="images/hotdaytag.jpg" width="55"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<a href = "http://www.rockthepost.com" target = "_blank"> 
+		<img src = "images/rockthepostbanner.png" alt = "" class = "rockthepostbannerposition"/>
+	</a>
+	
+</body>
+</html>

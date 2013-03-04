@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html>
+		<link rel="stylesheet" type="text/css" href="css/cartstyle.css"> <!--reference the stylesheet-->
+		<body>
+		<div class = "cartHeader">
+			You have <script src="js/CartTracker.js">MyCartTracker.readCookie()</script> items in your cart.
+		</div>
+			<div class = "tester">
+				<div class = "carttext">
+					Check Out Options:
+				</div>
+				
+				<script type='text/javascript' src='https://static-na.payments-amazon.com/cba/js/us/sandbox/PaymentWidgets.js'></script>
+				
+
+				<!-- For Switching to Production, comment out the lines above and uncomment the lines below -->
+				<!-- <script type='text/javascript' src='https://static-na.payments-amazon.com/cba/js/us/PaymentWidgets.js'>
+				</script> -->
+
+				<div id="cbaButton1">
+					<img src="https://payments-sandbox.amazon.com/gp/cba/button?type=cart&cartOwnerId=A1JT7WD2TUCIJC&color=orange&size=large&background=white"/>
+					<!-- For Switching to Production, comment out the line above and uncomment the line below -->
+					<!--<img src="https://payments.amazon.com/gp/cba/button?type=cart&cartOwnerId=A1JT7WD2TUCIJC&color=orange&size=large&background=white"/>-->
+				</div>
+				<script type='text/javascript'>
+				  new CBA.Widgets.StandardCheckoutWidget({
+					merchantId:'A1JT7WD2TUCIJC',
+					orderInput: { 
+						format: "XML",
+						value: "type:merchant-signed-order/aws-accesskey/1;order:PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48T3JkZXIgeG1sbnM9Imh0dHA6Ly9wYXltZW50cy5hbWF6b24uY29tL2NoZWNrb3V0LzIwMDktMDUtMTUvIj48Q2FydD48SXRlbXM+PEl0ZW0+PFNLVT5SZWRGaXNoMTIzPC9TS1U+PE1lcmNoYW50SWQ+QTFKVDdXRDJUVUNJSkM8L01lcmNoYW50SWQ+PFRpdGxlPlJlZCBGaXNoPC9UaXRsZT48RGVzY3JpcHRpb24+QSByZWQgZmlzaCBwYWNrZWQgaW4gc3ByaW5nIHdhdGVyIChDQkEgU3RhbmRhcmQgQ29kZSBHZW5lcmF0b3Igc2FtcGxlIGNhcnQpLjwvRGVzY3JpcHRpb24+PFByaWNlPjxBbW91bnQ+MTkuOTk8L0Ftb3VudD48Q3VycmVuY3lDb2RlPlVTRDwvQ3VycmVuY3lDb2RlPjwvUHJpY2U+PFF1YW50aXR5PjE8L1F1YW50aXR5PjwvSXRlbT48L0l0ZW1zPjwvQ2FydD48L09yZGVyPg==;signature:KWCAt/AGBrREVWBioX3/eEl4jV0=;aws-access-key-id:AKIAIZTLO67S6OPH77WA"},
+						buttonSettings: { size: 'large',color:'orange',background:'white'}
+				  }).render("cbaButton1");
+				</script>
+				<div class = "carttext">
+					-OR-
+				</div>
+				<img src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif">
+			</div>
+		</body>
+	
+	</html>
